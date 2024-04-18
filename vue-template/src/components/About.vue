@@ -24,7 +24,7 @@
           <div v-if="activeTab === 'CV'" class="tab-contents active-tab">
             <div class="video-container">
               <iframe class="video-frame" :src="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </div>
-            <a :href="cvPDF" download="CV-sali.pdf" class="btn btn2">Download CV</a>
+            <a :href="cvPDF" download="CV_Sali.pdf" class="btn btn2">Download CV</a>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@
 <script setup>
 import { ref } from 'vue';
 import imageSrcAbout from '@/assets/images/IMG_3628.pngda.png';
-import cvPDF from '@/assets/images/CV-sali.pdf';
+import cvPDF from '@/assets/images/CV_Sali.pdf';
 import skills from '@/assets/images/skills.png';
 
 const activeTab = ref('CV');
